@@ -1,10 +1,10 @@
 import React,{useState,useRef} from 'react'
 import Cards from '../../component/Card'
 function Right() {
-    const triggerRef1 = React.createRef<SVGSVGElement>();
-      const ref = useRef(null)
-      const [hovered, setHoverd] = useState(false)
+      const slideRef =useRef();
+      const [topSlide,settopSlide] = useState(["leftTop","centerTop","rightTop"]);
 
+      
     return (
         <div className="left-side">
             {/* 좌측 */}

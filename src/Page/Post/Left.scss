@@ -4,14 +4,21 @@
     background-color: whitesmoke;
 }
 .bmibox{
-    width:100%;
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    margin: 0 auto;
+    font-family: 'Leckerli One',cursive;
 
 }
+
 
 .manbox{
     padding-top: 20px;
     width: 400px;
-    height:600px;
-    background-color: red;
+    height:100%;
     margin: 0 auto;
+}
+.itemList{
+    border:1px solid black;
 }
