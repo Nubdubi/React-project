@@ -1,0 +1,24 @@
+.header{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.headerwrap{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+.likebutoon{
+    display: flex;
+    justify-content: center;
+}
+.searchBar{
+    width: 500px;
+    
+}
+.searchBar input{
+    width:400px;
+    height:30px;
+}
