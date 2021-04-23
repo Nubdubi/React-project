@@ -10,6 +10,15 @@
   background-color: rgb(226, 226, 226);
 }
 
+.like-box {
+  display: inline-block;
+}
+.likeButton {
+  border: none;
+  border-radius: 5px;
+}
+
+
 .base{
  display: flex;
  width: 100%;

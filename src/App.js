@@ -14,10 +14,13 @@ function App() {
       <div className="header">
         {/* 헤드 */}
         {/* -------------------------------------- */}
-         1
-         <button className="likeButton">
+        <div className="like-box">
+          {/* 두근.. 버튼에 온클릭 이벤트를 붙여보겠습니다. */}
+          <button className="likeButton" onClick={ () => setlike(like + 1)}>
             ❤
-         </button>
+          </button>
+          <span className="likeText"> {like} </span>
+        </div>
          {/* --------------------------------------- */}
       </div>
       <div className="base">
