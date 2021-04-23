@@ -2,7 +2,6 @@
   text-align: center;
   background-color: black;
 }
-
 .header{
   position: relative;
   width: 100%;
@@ -45,10 +44,10 @@ background-color: white;
 }
 
 .left-side {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
 }
 .items{
   margin:10px;
@@ -72,3 +71,10 @@ width: 48%;
 
 
 
+.like-box {
+  display: inline-block;
+}
+.likeButton {
+  border: none;
+  border-radius: 5px;
+}
