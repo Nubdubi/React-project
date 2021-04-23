@@ -17,10 +17,10 @@ function Header() {
                 </svg>
             </div>
             <div className="headerwrap">
-            <div className="likebutoon">
-             
-             {likenum}
+            <div className="likebutoon" onClick={ () => setlike( likenum = (like + 1))}>
+                {/* 요렇게 likenum에 할당하면 되는걸까요잉.. */}
 
+             {likenum}
 
              <a href="#">
                  <svg width="50" height="50" viewBox="-100 -100 600 5" >
