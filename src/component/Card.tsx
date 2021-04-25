@@ -4,7 +4,8 @@ import './Card.scss';
 
 
 function Card({imgUrl, caption}:{imgUrl:string, caption:string}) {
- 
+     
+
     return (
         <div className="cards">
          <button className="img">
