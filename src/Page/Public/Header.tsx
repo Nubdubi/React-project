@@ -2,8 +2,10 @@ import React,{useState} from 'react'
 import '../Public/Header.scss'
 
 function Header() {
-    const [like, setlike] = useState(0)
-    let likenum: number = 0;
+    const [like, setlike] = useState<number>(0)
+    // <number> 숫자 generics 설정
+    const onIncrease = () => setlike(like + 1);
+    let likenum:number = like;
     return (
         <div className="header">
             <div className="logo">
@@ -18,9 +20,12 @@ function Header() {
             </div>
             <div className="headerwrap">
             <div className="likebutoon" onClick={ () => setlike( likenum = (like + 1))}>
-                {/* 요렇게 likenum에 할당하면 되는걸까요잉.. */}
+            {/* <div className="likebutoon" onClick={onIncrease}></div>
+            <div className="likebutoon" onClick={ () => setlike((like + 1))}> */}
 
+                {/* 요렇게 likenum에 할당하면 되는걸까요잉.. */}
              {likenum}
+             {like}
 
              <a href="#">
                  <svg width="50" height="50" viewBox="-100 -100 600 5" >

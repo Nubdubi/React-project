@@ -1,18 +1,36 @@
 import React,{useState,useEffect} from 'react'
 import './Main.scss';
+import { db, auth, storage } from '../../firebase'
 import Cards from '../../component/Card' 
 import Header from '../Public/Header'
 import Bottom from '../Public/Bottom'
 import Right from '../Post/Right';
 import Left from '../Post/Left';
 
+
 function Main() {
-// 까꿍님이 해야할것 
-// 1. 페이지 좋아요 버튼 만들어보기
-// ( 클릭할때마다 숫자가 올라가는 버튼만들어보기)
+  
+    type Post = { id: string; post: object;  };
+  
+    const [posts, setPosts] = useState<Post[]>([]);
+    const [comments,setComments] = useState([]);
+    const [comment, setCommnets] = useState<string>('');
+    
   const [ like , setlike ] = useState(0);
 // //////////////////////////////////////////////////////////
-
+ 
+  useEffect(() => {
+    db.collection("post")
+      .orderBy("productNumber", "asc")
+      .onSnapshot(snapshot => {
+      setPosts(snapshot.docs.map(doc => ({
+        id: doc.id,
+        post: doc.data()
+      }))); 
+    })
+   
+  }, []);
+  
   return (
     <div className="MainPage">
       <div className="header">

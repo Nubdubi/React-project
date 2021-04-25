@@ -1,17 +1,22 @@
 import React from 'react'
 import './Card.scss';
 
-function Card() {
+
+
+function Card({imgUrl, caption}:{imgUrl:string, caption:string}) {
+ 
     return (
         <div className="cards">
-         <div className="img">
-           <img src="https://balenciaga.dam.kering.com/m/4bf92248d359dd26/Large-622224TJM238468_F.jpg?v=4" alt=""/>
+         <button className="img">
+          <img src={imgUrl} alt=""/>
+          <span className="caption">{caption}</span>      
+         </button>
           
-         </div>
-       
         </div>
         
     )
 }
 
 export default Card
+
+
