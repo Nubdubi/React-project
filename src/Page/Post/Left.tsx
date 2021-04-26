@@ -38,7 +38,7 @@ function Left() {
             </div>
             <div className="manbox">
                 {posts.map(({id,post})=>(
-              <Man key={id} caption={post.caption} imgUrl={post.imgUrl}/>
+              <Man/>
             ))}
             </div>
           </div>
