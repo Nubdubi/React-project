@@ -20,7 +20,8 @@ function Left() {
         })
       
       }, []);
-
+      
+ 
     
  
     return (
@@ -37,9 +38,11 @@ function Left() {
 
             </div>
             <div className="manbox">
-                {posts.map(({id,post})=>(
-              <Man/>
-            ))}
+              <img src="https://i.pinimg.com/originals/84/12/71/8412715b792dc8e26f384ce8d26e8304.jpg" alt="" width="492px" height="610px"/>
+                    {/* <Man/> */}
+                {/* {posts.map(({id,post})=>(
+          
+            ))} */}
             </div>
           </div>
             <div className="itemList">

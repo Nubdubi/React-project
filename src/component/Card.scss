@@ -4,8 +4,12 @@ $korfont: 'Roboto', sans-serif;
 $engfont: 'Lobster',cursive;
 $engBfont:'Roboto',sans-serif;
 
-
-.cards {
+.wrapcards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.cards  {
     width:150px;
     height:150px;
     border-radius: 14px;
@@ -13,7 +17,9 @@ $engBfont:'Roboto',sans-serif;
     display: flex;
     flex-direction: row;
     border: none;
-    
+    border-radius: 20px;
+    box-shadow: 5px 6px 7px 3px #aaaaaa;
+    margin-right:20px;
 
 }
 
@@ -29,12 +35,25 @@ $engBfont:'Roboto',sans-serif;
 // }
 
 img{
-    width:100%;
-    height:100%;
+    width:90%;
+    height:90%;
     border: none;
-   
+}
+button{
+    border-radius: 20px;
+    border: 1px solid #ddd
 }
 
-img:active{
-    border:none;
+button:active {
+    border-radius: 20px;
+    background-color: #ccc;
+    border: 1px solid #ddd
+}
+
+.captions{
+    padding-top: 10px;
+    width:80px;
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
 }
